@@ -37,6 +37,13 @@ img{
     width: 700px;
     max-width: 100%;
 }
+pre{
+    background: rgb(128, 126, 126);
+    color: white;
+    border-radius: 2px;
+    width:fit-content;
+    padding: 10px 25px;
+}
 @media only screen and (max-width: 550px){
     div{
         margin: 1rem;
@@ -175,7 +182,6 @@ Logos and banners form the first visual impression of a website. Using image edi
     </div>
     <div class="qn3">
         <p>3). Create an audio file and apply sound mixing, and special effects like fade-in, fade-out using audioediting tools like Audacity / Ardour</p>
-
         <p><b>Aim :</b><br><br>
 To create an audio file and enhance it by applying sound mixing and effects such as fade-in and fade-out using audio editing tools like Audacity or Ardour.
         </p>
@@ -209,7 +215,49 @@ Audio editing involves manipulating digital sound waves for clarity, mood enhanc
         </ol>
         </p>
         <p><b>Result :</b><br><br>
-An audio file was successfully created with sound mixing and special effects like fade-in and fade-out applied, using Audacity/Ardour.        </p>
+An audio file was successfully created with sound mixing and special effects like fade-in and fade-out applied, using Audacity/Ardour.
+        </p>
+    </div>
+        <div class="qn4">
+        <p>4). Create an audio file and generate an audio compression codec like MP3.</p>
+
+        <p><b>Aim :</b><br><br>
+To create an audio file and compress it using an audio codec like MP3 to reduce file size while maintaining acceptable audio quality.
+        </p>
+        <p><b>Principle :</b><br><br>
+Audio compression reduces the size of digital audio files using algorithms called codecs (COder-DECoder). MP3 (MPEG-1 Audio Layer III) is a popular lossy compression format that removes inaudible sound frequencies to significantly reduce file size with minimal loss in quality.        
+        </p>
+        <p><b>Apparatus Required :</b><br>
+            <ul>
+<li>Desktop/Laptop with Audacity, FFmpeg, or any audio converter tool installed</li>
+<li>Microphone (for recording) or pre-recorded audio clips</li>
+<li>MP3 encoder (LAME for Audacity)</li>
+<li>Headphones for monitoring audio quality</li>
+            </ul>
+        </p>
+        <p><b>Output :</b><br><br>
+        Before :<br><br>
+        <a href="https://romaco.ca/blog/wp-content/uploads/2015/03/256cbraac.png"><img src="https://romaco.ca/blog/wp-content/uploads/2015/03/256cbraac.png" width="500px"></a><br>
+        <br>After :<br><br>
+        <a href="https://dp0rksi384o97.cloudfront.net/media/247/Zhe6d55weO2Y6HEBIGW2fVv3hv0utnKlmZ0c5bTR.png"><img src="https://dp0rksi384o97.cloudfront.net/media/247/Zhe6d55weO2Y6HEBIGW2fVv3hv0utnKlmZ0c5bTR.png" width="500px"></a><br>
+ 
+        Write a small summary abt the output(Page covering) or refer the record for content filling
+        </p>
+        <p><b>Procedure :</b>
+        <ol>
+<li>Open Audacity and import or record an audio file.</li>
+<li>Perform basic editing: noise reduction, normalization, trimming silence.</li>
+<li>Go to File → Export → Export as MP3.</li>
+<li>Choose bitrate (128 kbps is standard), sample rate (44.1 kHz).</li>
+<li>Save the file with .mp3 extension using the LAME MP3 encoder.</li>
+<li>Optionally, use FFmpeg:</li>
+<pre>ffmpeg -i input.wav -b:a 128k output.mp3</pre>
+<li>Compare file size before and after compression.</li>
+        </ol>
+        </p>
+        <p><b>Result :</b><br><br>
+Successfully created and compressed an audio file into MP3 format using an audio codec, achieving over 80% reduction in file size with good quality retention.
+        </p>
     </div>
 </body>
 </html>
