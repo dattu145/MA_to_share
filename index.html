@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MA Experiments Simplified</title>
 </head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 div{
     margin: 4rem 2rem;
@@ -49,6 +51,47 @@ pre{
 .imp{
     color: rgb(232, 83, 83);
 }
+#pointers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+    padding: 1.3rem;
+}
+#pointers span{
+    width: 50px;
+    height: 50px;
+    background: rgb(78, 77, 77);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back_to_top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+    width: 40px;
+    height: 40px;
+    background: rgb(0, 0, 0);
+    color: white;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    opacity: 20%;
+    cursor: pointer;
+}
+.back_to_top:hover{
+    opacity: 50%;
+}
 @media only screen and (max-width: 550px){
     div{
         margin: 1rem;
@@ -65,8 +108,18 @@ pre{
 }
 </style>
 <body>
+    <a href="#pointers"><div class="back_to_top"><i class="fa-solid fa-arrow-up"></i></div></a>
     <h1>MA Experiments Simplified</h1>
-    <div class="qn1">
+    <div id="pointers">
+        <a href="#qn1"><span>1</span></a>
+        <a href="#qn2"><span>2</span></a>
+        <a href="#qn3"><span>3</span></a>
+        <a href="#qn4"><span>4</span></a>
+        <a href="#qn5"><span>5</span></a>
+        <a href="#qn6"><span>6</span></a>
+        <a href="#qn7"><span>7</span></a>
+    </div>
+    <div id="qn1">
         <p>1). Use different selection and transform tools to modify or improve an image using image editing 
 tools like GIMP/ InkScape / Krita</p>
 
@@ -149,7 +202,7 @@ Selection tools allow specific parts of an image to be isolated for editing, whi
         Successfully used multiple selection and transformation tools to modify the image by resizing, rotating, flipping, and repositioning different elements.
         </p>
     </div>
-    <div class="qn2">
+    <div id="qn2">
         <p>2). Create logos and banners for home pages of websites using image editing tools like GIMP /InkScape / Krita</p>
 
         <p><b>Aim :</b><br><br>
@@ -185,7 +238,7 @@ Logos and banners form the first visual impression of a website. Using image edi
         Successfully created a logo and a banner design for a website homepage, applying vector/raster graphics, typography, and layout principles using image editing software.
         </p>
     </div>
-    <div class="qn3">
+    <div id="qn3">
         <p>3). Create an audio file and apply sound mixing, and special effects like fade-in, fade-out using audioediting tools like Audacity / Ardour</p>
         <p><b>Aim :</b><br><br>
 To create an audio file and enhance it by applying sound mixing and effects such as fade-in and fade-out using audio editing tools like Audacity or Ardour.
@@ -223,7 +276,7 @@ Audio editing involves manipulating digital sound waves for clarity, mood enhanc
 An audio file was successfully created with sound mixing and special effects like fade-in and fade-out applied, using Audacity/Ardour.
         </p>
     </div>
-    <div class="qn4">
+    <div id="qn4">
         <p>4). Create an audio file and generate an audio compression codec like MP3.</p>
 
         <p><b>Aim :</b><br><br>
@@ -269,7 +322,7 @@ Audio compression reduces the size of digital audio files using algorithms calle
 Successfully created and compressed an audio file into MP3 format using an audio codec, achieving over 80% reduction in file size with good quality retention.
         </p>
     </div>
-    <div class="qn5">
+    <div id="qn5">
         <p>5). Develop a video mix, and video content, remove noise, create special effects, and add captions using video editing tools like OpenShot / Cinelerra</p>
 
         <p><b>Aim :</b><br><br>
@@ -314,7 +367,7 @@ Video editing is the art and process of manipulating and rearranging video shots
 Successfully developed a mixed video with clean audio, visual effects, and captions using OpenShot/Cinelerra. The final output was smooth, engaging, and professionally presented.        
         </p>
     </div>
-        <div class="qn6">
+        <div id="qn6">
         <p>6). Make a video and apply Compress and convert the video file format to other popular formats like MP4</p>
 
         <p><b>Aim :</b><br><br>
@@ -352,7 +405,7 @@ Video compression reduces file size by encoding video data more efficiently, usi
 Successfully developed a mixed video with clean audio, visual effects, and captions using OpenShot/Cinelerra. The final output was smooth, engaging, and professionally presented.        
         </p>
     </div>
-    <div class="qn7">
+    <div id="qn7">
         <p>7). Design a simple Home page with banners, logos, tables, and quick links using authoring tools like
 Adapt / KompoZer/ BlueGriffon / BlueFish</p>
 
