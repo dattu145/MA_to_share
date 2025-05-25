@@ -44,6 +44,10 @@ pre{
     width:fit-content;
     padding: 10px 25px;
 }
+.procedure_table, .procedure_table tr,.procedure_table td{
+    border: none;
+    border-collapse: initial;
+}
 @media only screen and (max-width: 550px){
     div{
         margin: 1rem;
@@ -244,16 +248,21 @@ Audio compression reduces the size of digital audio files using algorithms calle
         Write a small summary abt the output(Page covering) or refer the record for content filling
         </p>
         <p><b>Procedure :</b>
-        <ol>
-<li>Open Audacity and import or record an audio file.</li>
-<li>Perform basic editing: noise reduction, normalization, trimming silence.</li>
-<li>Go to File → Export → Export as MP3.</li>
-<li>Choose bitrate (128 kbps is standard), sample rate (44.1 kHz).</li>
-<li>Save the file with .mp3 extension using the LAME MP3 encoder.</li>
-<li>Optionally, use FFmpeg:</li>
-<pre>ffmpeg -i input.wav -b:a 128k output.mp3</pre>
-<li>Compare file size before and after compression.</li>
+            <ol>
+<li><b>Open Audacity:</b><br>Launch the app.</li><br>
+<li><b>Import Audio:</b><br>File > Import > Audio, select your file.</li><br>
+<li><b>Edit Audio:</b><br>Make any edits or adjustments needed.</li><br>
+<li><b>Select Section (Optional):</b><br>Highlight part of the audio if needed.</li><br>
+<li><b>Export Audio:</b><br>File > Export > (Selected) Audio.</li><br>
+<li><b>Choose Format:</b><br>Pick MP3, AAC, OGG, etc. Click Options.</li><br>
+<li><b>Set Compression:</b><br>Adjust bitrate or other quality settings.</li><br>
+<li><b>Select Codec:</b><br>Pick LAME, FFMPEG, etc., if available.</li><br>
+<li><b>Tweak Settings (Optional):</b><br>Adjust quality/stereo options.</li><br>
+<li><b>Preview & Export:</b><br>Preview, then click OK/Export.</li><br>
+<li><b>Add Metadata (Optional):</b><br>Include artist, title, album info.</li><br>
+<li><b>Done:</b><br>Your compressed file is saved.</li><br>
         </ol>
+        Write descriptions elaborately..available in record
         </p>
         <p><b>Result :</b><br><br>
 Successfully created and compressed an audio file into MP3 format using an audio codec, achieving over 80% reduction in file size with good quality retention.
