@@ -54,11 +54,11 @@ pre{
 #pointers{
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: .9rem;
     align-items: center;
     justify-content: center;
     border-bottom: none;
-    padding: 1.3rem;
+    padding: 1.2rem;
 }
 #pointers span{
     width: 50px;
@@ -118,6 +118,8 @@ pre{
         <a href="#qn5"><span>5</span></a>
         <a href="#qn6"><span>6</span></a>
         <a href="#qn7"><span>7</span></a>
+        <a href="#qn8"><span>8</span></a>
+
     </div>
     <div id="qn1">
         <p>1). Use different selection and transform tools to modify or improve an image using image editing 
@@ -503,6 +505,147 @@ table, th, td {
 As this exp is big, Apparatus and Principle is (optional);<br><br>
 <p><b>Result :</b><br><br>
 Successfully developed a mixed video with clean audio, visual effects, and captions using OpenShot/Cinelerra. The final output was smooth, engaging, and professionally presented.        
+</p>
+</div>
+
+<div id="qn8">
+        <p>8). Display a search interface and simple navigation from the home page to the inside pages of the website and also design responsive web pages for use on both web and mobile interfaces using
+authoring tools like Adapt / KompoZer/ BlueGriffon / BlueFish</p>
+
+        <p><b>Aim :</b><br><br>
+To create a home page with a search interface, internal navigation, and design responsive web pages that work effectively on both desktop and mobile devices, using authoring tools like Adapt, KompoZer, BlueGriffon, or BlueFish.
+        </p>
+        <p><b>Principle :</b><br><br>
+            <ul>
+                <li><b>Search interfaces</b> improve user experience by allowing users to find specific content quickly.</li>
+                <li><b>Navigation links</b> connect different pages within a website.</li>
+                <li><b>Responsive design</b> uses flexible layouts and media queries to adapt to various screen sizes, ensuring accessibility on all devices.</li>
+            </ul>
+        </p>
+        <p><b>Apparatus Required :</b><br>
+            <ul>
+<li>Desktop/Laptop</li>
+<li>Authoring software: KompoZer / BlueGriffon / BlueFish / Adapt</li>
+<li>Basic knowledge of HTML and CSS</li>
+<li>Web browser (for preview)</li>
+            </ul>
+        </p>
+        <p><b>Procedure :</b>
+        <ol>
+<li><b>Create the Home Page:</b><ul><br>
+    <li>Add a search box :</li><br>
+    <pre>
+        &lt;form action="search.html" method="get"&gt;
+            &lt;input type="text" placeholder="Search..."&gt;
+            &lt;input type="submit" value="Go"&gt;
+        &lt;/form&gt;
+    </pre><br>
+    <li>Insert navigation links to other pages:</li><br>
+    <pre>
+        &lt;nav&gt;
+            &lt;a href="about.html"&gt;About&lt;/a&gt; |
+            &lt;a href="services.html"&gt;Services&lt;/a&gt; |
+            &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+        &lt;/nav&gt;
+    </pre>
+</ul><br>
+<li><b>Design Inside Pages (about.html, contact.html, etc.)</b>
+    <ul>
+        <br><li>Use similar layout and navigation for consistency.</li>
+    </ul>
+    </li><br>
+<li><b>Make Pages Responsive:</b><ul><br>
+    <li>Include viewport meta tag:</li><br>
+    <pre>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    </pre><br>
+    <li>Use CSS media queries:</li><br>
+    <pre>
+@media screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+    </pre>
+</ul><br>
+<li><b>Test responsiveness using browser dev tools (responsive mode).</b></li>
+<li><b>Ensure functionality of navigation and search.</b></li>
+</ol>
+        Write descriptions elaborately..available in record
+        </p>
+
+        <p><b>Program :</b><br><br>
+            index.html,
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Homepage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;header&gt;
+    &lt;!-- Search --&gt;
+    &lt;form action="search-results.html" method="get"&gt;
+      &lt;input type="text" name="q" placeholder="Search..."&gt;
+      &lt;button type="submit"&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;!-- Navigation --&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a simple homepage with search and navigation.&lt;/p&gt;
+  &lt;/main&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br>
+style.css,
+<pre>
+body { 
+    font-family: sans-serif; 
+    margin: 0; 
+}
+header { 
+    background: #eee; 
+    padding: 10px; 
+}
+form, nav ul { 
+    margin: 0; 
+    padding: 5px; 
+}
+input, button { 
+    padding: 5px; 
+}
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 10px; 
+}
+a { 
+    text-decoration: none; 
+    color: #000; 
+}
+</pre>
+</p>
+<p><b>Output :</b><br>
+<a href="./assets/img2.png"><img src="./assets/img2.png"></a>
+</p>
+As this exp is big, Apparatus and Principle is (optional);<br><br>
+<p><b>Result :</b><br><br>
+Successfully created a functional and responsive website with a home page featuring a search interface and internal navigation. Pages are mobile-friendly and adjust to various screen sizes.
 </p>
 </div>
 </body>
